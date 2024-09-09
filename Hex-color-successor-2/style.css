@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+}
+.copy-btn{
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px; 
+}
+.input-group .hash{
+    position: relative;
+    top: 0.6rem;
+    left: 1.9rem;
+    background-color: rgba(128, 128, 128, 0.427);
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 0px 0px 8px;
+}
+.container #my-btn{
+    padding: 10px 30px;
+    margin-top: 20px; 
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: beige;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+.container #my-btn:hover{
+    background-color:gray;
+    color: white;
+}
+.container input{
+    margin-top: 20px; 
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: #fff;
+    text-align:center;
+}
+
+.container input:active{
+    border-color: black;
+}
+.input-group-2 input{
+    text-align: center;
+    margin-left: 30px;
+}
+.rgb-code{
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+.toast-message{
+    position: fixed;
+    right: 2rem;
+    z-index: 100;
+    top: 2rem;
+    background-color: green;
+    color: #fff;
+    padding: 15px 35px;
+    cursor: pointer;
+    border:1px solid #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.toast-message-slide-in{
+    animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-message-slide-out{
+    animation: toast-animation-out 0.5s ease-in;
+}
+
+@keyframes toast-animation-in{
+    from{
+        transform:translateX(200px);
+        opacity:0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes toast-animation-out{
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    to{
+        transform:translateX(200px);
+        opacity:0;
+    }
+}

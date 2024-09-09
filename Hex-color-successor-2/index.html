@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexa Color Change with toast message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="root">
+        <h1>Click the button for change background color!</h1>
+        <h3 style="margin-top: 8px;">Hex Code</h3>
+        <div class="input-group">
+            <div class="hash">#</div> 
+            <input type="text" value="ffffff" id="output">
+            <button id="copy" class="copy-btn" title="copy to clipboard">Copy</button>
+            
+        </div>
+        <h3 class="rgb-code">RGB Code</h3>
+        <div class="input-group-2">
+            <input type="text" disabled value="rgb(255,255,255)" id="output-2">
+            <button id="copy-2" class="copy-btn" title="copy to clipboard">Copy</button>
+        </div>
+        <button id="my-btn">Change color</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
