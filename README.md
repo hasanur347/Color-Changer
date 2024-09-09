@@ -15,4 +15,4 @@ This is a simple color changer web application built using HTML, CSS, and JavaSc
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/hasanur347/Color-Changer.git
+   git clone https://github.com/hasanur347/Color-Changer
